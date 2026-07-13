@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Muhammad Shahroz - Supply Chain & Logistics Professional, U.S. Freight Operations, Data-Driven Operations Manager.">
-    <title>Muhammad Shahroz | Supply Chain & Logistics Professional</title>
+    <meta name="description" content="Muhammad Shahroz - Logistics and Supply Chain Specialist. Open to global relocation.">
+    <title>Muhammad Shahroz | Logistics & Supply Chain Specialist</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         /* CSS Variables for Design System */
@@ -16,6 +16,8 @@
             --text-main: #334155;
             --text-light: #64748B;
             --border: #E2E8F0;
+            --badge-bg: #E0F2FE;
+            --badge-text: #0369A1;
         }
 
         /* Reset & Base Styles */
@@ -35,9 +37,13 @@
         .nav-links a:hover { color: var(--teal); }
 
         /* Hero Section */
-        .hero { display: flex; align-items: center; min-height: 70vh; background: var(--white); }
+        .hero { display: flex; align-items: center; min-height: 75vh; background: var(--white); }
         .hero .container { display: flex; align-items: center; justify-content: space-between; gap: 50px; }
         .hero-content { flex: 1; }
+        
+        .relocate-badge { display: inline-flex; align-items: center; background-color: var(--badge-bg); color: var(--badge-text); font-weight: 600; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; margin-bottom: 20px; letter-spacing: 0.5px; }
+        .relocate-badge::before { content: '🌍'; margin-right: 6px; }
+
         .hero-image { flex: 0 0 300px; display: flex; justify-content: center; }
         .hero-image img { width: 100%; max-width: 300px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); border: 4px solid var(--white); background-color: var(--teal); object-fit: cover;}
         
@@ -51,11 +57,11 @@
 
         /* Metrics Section */
         .metrics { background: var(--navy); color: var(--white); padding: 60px 0; }
-        .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; text-align: center; }
+        .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; text-align: center; }
         .metric-card h3 { color: var(--teal); font-size: 2.5rem; margin-bottom: 10px; }
         .metric-card p { font-size: 1rem; opacity: 0.9; }
 
-        /* Experience Section */
+        /* General Section Styling */
         .section-title { font-size: 2rem; margin-bottom: 40px; text-align: center; }
         .timeline-item { background: var(--white); padding: 30px; border-radius: 8px; border: 1px solid var(--border); margin-bottom: 20px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
         .timeline-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
@@ -65,7 +71,11 @@
         .timeline-item ul { padding-left: 20px; }
         .timeline-item li { margin-bottom: 10px; font-size: 0.95rem; }
 
-        /* Skills & Certs Section */
+        /* Skills Tags */
+        .skills-container { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
+        .skill-tag { background: var(--primary-bg); border: 1px solid var(--border); padding: 6px 12px; border-radius: 4px; font-size: 0.9rem; font-weight: 500; color: var(--navy); }
+
+        /* Skills & Certs Section Grid */
         .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
         .list-card { background: var(--white); padding: 30px; border-radius: 8px; border: 1px solid var(--border); }
         .list-card h3 { margin-bottom: 20px; font-size: 1.3rem; }
@@ -76,6 +86,7 @@
         /* Footer */
         footer { background: var(--navy); color: var(--white); text-align: center; padding: 40px 0; }
         footer a { color: var(--teal); font-weight: 600; }
+        .footer-contact { margin-top: 20px; font-size: 1.1rem; }
 
         /* Mobile Adjustments */
         @media (max-width: 768px) {
@@ -98,8 +109,8 @@
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
                 <a href="#credentials">Credentials</a>
-                <a href="#contact">Contact</a>
             </div>
         </div>
     </nav>
@@ -108,11 +119,12 @@
     <section class="hero" id="about">
         <div class="container">
             <div class="hero-content">
-                <h2>Supply Chain & Logistics Professional</h2>
-                <h1>Turning operational chaos into data-driven results.</h1>
-                <p>I am a Mechanical Engineer leveraging data analytics and AI tools to optimize U.S. freight operations. From dispatching complex loads across 80+ carriers to automating KPI workflows, I bridge the gap between physical supply chains and digital efficiency.</p>
-                <a href="mailto:mshahroz620@gmail.com" class="btn">Email Me</a>
-                <a href="https://www.linkedin.com/in/muhammadshahroz620" class="btn btn-outline" target="_blank">View LinkedIn</a>
+                <div class="relocate-badge">Open to Global Relocation</div>
+                <h2>Logistics & Supply Chain Specialist</h2>
+                <h1>Optimizing global freight through engineered data.</h1>
+                <p>I am a Mechanical Engineer leveraging data analytics, Six Sigma principles, and TMS platforms to transform U.S. freight operations. Passionate about applying digital supply chain transformation and sustainable trade practices to drive measurable impact for growth-oriented organizations.</p>
+                <a href="mailto:mshahroz620@gmail.com" class="btn">Contact Me</a>
+                <a href="https://www.linkedin.com/in/muhammadshahroz620" class="btn btn-outline" target="_blank">LinkedIn Profile</a>
             </div>
             <div class="hero-image">
                 <img src="My Pic Blue.png" alt="Muhammad Shahroz">
@@ -125,19 +137,19 @@
         <div class="container metrics-grid">
             <div class="metric-card">
                 <h3>30%</h3>
-                <p>Carrier Revenue Growth</p>
+                <p>Revenue Gains</p>
             </div>
             <div class="metric-card">
                 <h3>98%</h3>
-                <p>On-Time Delivery Rate</p>
+                <p>On-Time Deliveries</p>
+            </div>
+            <div class="metric-card">
+                <h3>15%</h3>
+                <p>Efficiency Improvement</p>
             </div>
             <div class="metric-card">
                 <h3>100%</h3>
-                <p>FMCSA/DOT Compliance</p>
-            </div>
-            <div class="metric-card">
-                <h3>95%</h3>
-                <p>Disruptions Resolved < 2 Hrs</p>
+                <p>Regulatory Compliance</p>
             </div>
         </div>
     </section>
@@ -149,77 +161,107 @@
         <div class="timeline-item">
             <div class="timeline-header">
                 <h3>Jesper Logistics LLC</h3>
-                <span>April 2024 - Present | Farmington, MO / Lahore</span>
+                <span>January 2024 - Present</span>
             </div>
             <div class="role">Logistics & Operations Manager</div>
             <ul>
-                <li>Drove 30% growth in monthly carrier revenue by optimising routes for 80+ U.S. carriers through DAT, Truckstop and TMS analytics, independently tracking all performance data via Excel and Google Sheets.</li>
-                <li>Achieved 98% on-time delivery across U.S. freight lanes by orchestrating real-time dispatch and load tracking through Motive ELD/GPS systems.</li>
-                <li>Secured high-value freight contracts through strategic broker negotiations, elevating dispatch efficiency by 15% while significantly reducing carrier idle time.</li>
-                <li>Guaranteed 100% FMCSA/DOT compliance by overhauling carrier documentation workflows, eliminating administrative errors and fortifying audit readiness.</li>
-                <li>Engineered automated invoicing and real-time KPI monitoring via advanced Excel and Google Sheets, converting raw operational data into actionable business insights.</li>
+                <li><strong>Workflow Monitoring:</strong> Managed daily freight operations, dispatch, and real-time load tracking, consistently achieving 98% on-time deliveries.</li>
+                <li><strong>Efficiency Optimization:</strong> Analyzed shipment data to overhaul operational workflows, contributing to a 30% increase in monthly carrier revenue and 15% efficiency improvements.</li>
+                <li><strong>Resource Management:</strong> Negotiated high-paying contracts with freight brokers, elevating dispatch efficiency by 15% while strategically reducing driver idle time.</li>
+                <li><strong>Process Coordination:</strong> Orchestrated cross-stakeholder communication to resolve 95% of operational disruptions within a 2-hour window.</li>
+                <li><strong>Data-Driven Automation:</strong> Automated key reporting functions and KPI monitoring using advanced Excel, providing actionable insights for continuous operational enhancements.</li>
+                <li><strong>Compliance Leadership:</strong> Streamlined internal documentation to guarantee 100% regulatory compliance and secure audit readiness.</li>
             </ul>
         </div>
 
         <div class="timeline-item">
             <div class="timeline-header">
-                <h3>Jesper Logistics LLC</h3>
-                <span>January 2024 - March 2024 | Lahore</span>
+                <h3>Amal Academy (Stanford University & PepsiCo Funded)</h3>
+                <span>August 2023 - November 2023</span>
             </div>
-            <div class="role">Logistics & Operations Associate</div>
+            <div class="role">Career-Prep Fellow & Ambassador</div>
             <ul>
-                <li>Executed daily freight bookings, driver dispatch and shipment tracking across U.S. lanes via TMS, DAT and Truckstop, rapidly mastering end-to-end logistics operations.</li>
-                <li>Resolved 95% of operational disruptions—weather delays, mechanical failures and compliance issues—within 2 hours through proactive communication and decisive problem-solving.</li>
+                <li>Selected from over 4,500 applicants for an intensive, fully-funded 3-month professional development fellowship.</li>
+                <li>Cultivated executive-level business skills including strategic problem-solving, risk management, and cross-cultural communication through 150+ hours of rigorous training.</li>
+                <li>Operated as Fellowship Ambassador, successfully engaging 200+ university students and driving 50+ program enrollments.</li>
             </ul>
         </div>
 
         <div class="timeline-item">
             <div class="timeline-header">
-                <h3>Amal Academy</h3>
-                <span>August 2023 - November 2023 | Lahore</span>
+                <h3>Pakistan Railways</h3>
+                <span>Early Career Internship</span>
             </div>
-            <div class="role">Career-Prep Fellow & Ambassador | Stanford & PepsiCo Funded</div>
+            <div class="role">Intern Mechanical Engineer</div>
             <ul>
-                <li>Awarded a Stanford University & PepsiCo Pakistan-funded scholarship, competitively selected from 4,500+ applicants.</li>
-                <li>Championed Amal Academy's mission as Brand Ambassador, conducting outreach sessions and public speaking engagements across 200+ university students.</li>
-            </ul>
-        </div>
-        
-        <div class="timeline-item">
-            <div class="timeline-header">
-                <h3>AGB Assistance</h3>
-                <span>December 2022 - April 2023</span>
-            </div>
-            <div class="role">Freelance Web Developer & Digital Consultant</div>
-            <ul>
-                <li>Founded and operated a freelance web development venture, delivering custom WordPress websites from scratch for small businesses.</li>
-                <li>Managed the complete project lifecycle—client consultation, requirements gathering and on-time delivery.</li>
+                <li>Gained practical, large-scale industrial operations exposure across machine shops, foundries, and power plants.</li>
+                <li>Assisted in the complex overhauling and repair of diesel locomotive engines, building a robust foundation in industrial maintenance workflows.</li>
             </ul>
         </div>
     </section>
 
-    <!-- Credentials Section -->
-    <section id="credentials" style="background-color: var(--white);">
-        <div class="container grid-2">
-            <!-- Education -->
-            <div class="list-card">
-                <h3>Education</h3>
+    <!-- Projects Section -->
+    <section id="projects" style="background-color: var(--white);">
+        <div class="container">
+            <h2 class="section-title">Engineering & Systems Design</h2>
+            
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <h3>HDH Technology Water Purification System</h3>
+                    <span>July 2022 - May 2023</span>
+                </div>
+                <div class="role">Research and Development Engineer</div>
                 <ul>
-                    <li><strong>B.S. Mechanical Engineering</strong> <br>University of Engineering and Technology, Lahore (2019 - 2023)</li>
-                    <li><strong>Google Data Analytics Specialization</strong> <br>Coursera (Oct 2023 - Dec 2023)</li>
-                    <li><strong>Supply Chain Analyst Professional Certificate</strong> <br>Unilever / Coursera (Oct 2025 - June 2026)</li>
+                    <li>Designed an economical, solar-powered water purification system utilizing HDH-WH technology to minimize carbon impact.</li>
+                    <li>Conducted rigorous parametric analysis (temperature, flow rate) to optimize the Recovery Ratio (RR) to 70–80%.</li>
+                    <li>Spearheaded risk management, cost analysis, and environmental impact assessments to ensure component longevity and scalable efficiency.</li>
                 </ul>
             </div>
-            <!-- Certifications & Skills -->
-            <div class="list-card">
-                <h3>Certifications & Core Skills</h3>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <h3>Walk-Behind Rice Transplanter Development</h3>
+                    <span>August 2021 - May 2022</span>
+                </div>
+                <div class="role">Associate Research Engineer</div>
                 <ul>
-                    <li>Professional Mechanical Engineer</li>
-                    <li>Mastering AI Prompt Engineering</li>
-                    <li>Supply Chain & Logistics Management</li>
-                    <li>U.S. Freight Operations & Import/Export</li>
-                    <li>TMS, DAT, Truckstop & Motive ELD/GPS</li>
-                    <li>Process Automation (Excel, Google Sheets)</li>
+                    <li>Designed and prototyped a mechanical agricultural asset focused on operational efficiency and scalability.</li>
+                    <li>Applied concepts of machinery management directly applicable to automation within agricultural logistics and supply chain optimization.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credentials Section -->
+    <section id="credentials">
+        <div class="container grid-2">
+            <!-- Skills -->
+            <div class="list-card">
+                <h3>Core Competencies</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">Logistics Management</span>
+                    <span class="skill-tag">Inventory Optimization</span>
+                    <span class="skill-tag">Demand Forecasting</span>
+                    <span class="skill-tag">Risk Mitigation</span>
+                    <span class="skill-tag">Cost Modeling</span>
+                    <span class="skill-tag">KPI Analysis</span>
+                    <span class="skill-tag">Six Sigma Principles</span>
+                    <span class="skill-tag">SAP (WMS)</span>
+                    <span class="skill-tag">TMS (DAT, Truckstop)</span>
+                    <span class="skill-tag">SQL & Data Analysis</span>
+                    <span class="skill-tag">AI/ML Workflows</span>
+                </div>
+            </div>
+            
+            <!-- Certifications & Education -->
+            <div class="list-card">
+                <h3>Education & Certifications</h3>
+                <ul>
+                    <li><strong>B.Sc. Mechanical Engineering</strong> <br>University of Engineering and Technology, Lahore (2019 - 2023)</li>
+                    <li><strong>Google Data Analytics Certificate</strong> <br>Coursera (Data Lifecycle, SQL, Spreadsheets)</li>
+                    <li><strong>Advanced Excel Mastery</strong> <br>Simplilearn (Pivot tables, Macros, Dashboards)</li>
+                    <li><strong>Mastering AI Prompt Engineering</strong> <br>LLM optimization for workflow automation</li>
+                    <li><strong>Health & Safety Compliance</strong> <br>Occupational protocols for industrial environments</li>
                 </ul>
             </div>
         </div>
@@ -228,10 +270,12 @@
     <!-- Footer / Contact -->
     <footer id="contact">
         <div class="container">
-            <h2>Ready to optimize your operations?</h2>
-            <p style="margin: 20px 0; color: var(--text-light);">Based in Lahore, Pakistan. Open to global roles in Supply Chain, Logistics, and Freight Operations.</p>
-            <p>Email: <a href="mailto:mshahroz620@gmail.com">mshahroz620@gmail.com</a></p>
-            <p style="margin-top: 10px;">Connect: <a href="https://www.linkedin.com/in/muhammadshahroz620" target="_blank">LinkedIn Profile</a></p>
+            <h2>Ready to optimize your global operations?</h2>
+            <div class="footer-contact">
+                <p>📍 Lahore, Pakistan | 🌍 Open to Global Relocation</p>
+                <p>📞 <a href="tel:+923024071471">+92 302 4071471</a></p>
+                <p>✉️ <a href="mailto:mshahroz620@gmail.com">mshahroz620@gmail.com</a></p>
+            </div>
         </div>
     </footer>
 
