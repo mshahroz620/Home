@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Muhammad Shahroz - Logistics and Supply Chain Specialist. Open to global relocation.">
-    <title>Muhammad Shahroz | Logistics & Supply Chain Specialist</title>
+    <meta name="description" content="Muhammad Shahroz - Logistics & Supply Chain Professional. Open to global relocation.">
+    <title>Muhammad Shahroz | Logistics & Supply Chain Professional</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         /* CSS Variables for Design System */
@@ -55,15 +55,15 @@
         .btn-outline { background: transparent; color: var(--navy); border: 2px solid var(--navy); margin-left: 10px; }
         .btn-outline:hover { background: var(--navy); color: var(--white); }
 
-        /* Metrics Section */
-        .metrics { background: var(--navy); color: var(--white); padding: 60px 0; }
+        /* Metrics Section - Added bottom margin buffer to fix clipping layout issue */
+        .metrics { background: var(--navy); color: var(--white); padding: 60px 0; margin-bottom: 40px; }
         .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; text-align: center; }
         .metric-card h3 { color: var(--teal); font-size: 2.5rem; margin-bottom: 10px; }
         .metric-card p { font-size: 1rem; opacity: 0.9; }
 
-        /* General Section Styling */
+        /* Experience Section Styling */
         .section-title { font-size: 2rem; margin-bottom: 40px; text-align: center; }
-        .timeline-item { background: var(--white); padding: 30px; border-radius: 8px; border: 1px solid var(--border); margin-bottom: 20px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+        .timeline-item { background: var(--white); padding: 30px; border-radius: 8px; border: 1px solid var(--border); margin-bottom: 25px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
         .timeline-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
         .timeline-header h3 { font-size: 1.3rem; }
         .timeline-header span { color: var(--text-light); font-weight: 500; font-size: 0.9rem; }
@@ -72,16 +72,17 @@
         .timeline-item li { margin-bottom: 10px; font-size: 0.95rem; }
 
         /* Skills Tags */
-        .skills-container { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
-        .skill-tag { background: var(--primary-bg); border: 1px solid var(--border); padding: 6px 12px; border-radius: 4px; font-size: 0.9rem; font-weight: 500; color: var(--navy); }
+        .skills-container { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 5px; }
+        .skill-tag { background: var(--primary-bg); border: 1px solid var(--border); padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: 500; color: var(--navy); }
 
-        /* Skills & Certs Section Grid */
-        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-        .list-card { background: var(--white); padding: 30px; border-radius: 8px; border: 1px solid var(--border); }
-        .list-card h3 { margin-bottom: 20px; font-size: 1.3rem; }
+        /* 3-Column Split for Credentials */
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
+        .list-card { background: var(--white); padding: 25px; border-radius: 8px; border: 1px solid var(--border); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.04); }
+        .list-card h3 { margin-bottom: 20px; font-size: 1.25rem; border-bottom: 2px solid var(--primary-bg); padding-bottom: 10px; }
         .list-card ul { list-style-type: none; padding: 0; }
-        .list-card li { padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 0.95rem; display: flex; align-items: center; }
-        .list-card li::before { content: '✓'; color: var(--teal); font-weight: bold; margin-right: 10px; }
+        .list-card li { padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; line-height: 1.5; }
+        .list-card li:last-child { border-bottom: none; }
+        .list-card li strong { color: var(--navy); }
 
         /* Footer */
         footer { background: var(--navy); color: var(--white); text-align: center; padding: 40px 0; }
@@ -89,13 +90,15 @@
         .footer-contact { margin-top: 20px; font-size: 1.1rem; }
 
         /* Mobile Adjustments */
+        @media (max-width: 992px) {
+            .grid-3 { grid-template-columns: 1fr; gap: 20px; }
+        }
         @media (max-width: 768px) {
             .hero .container { flex-direction: column-reverse; text-align: center; gap: 30px; }
             .hero h1 { font-size: 2.2rem; }
             .hero-image img { max-width: 200px; }
             .btn-outline { margin-left: 0; margin-top: 15px; display: block; width: max-content; margin-inline: auto; }
             .timeline-header { flex-direction: column; align-items: flex-start; }
-            .grid-2 { grid-template-columns: 1fr; }
             .nav-links { display: none; }
         }
     </style>
@@ -120,7 +123,7 @@
         <div class="container">
             <div class="hero-content">
                 <div class="relocate-badge">Open to Global Relocation</div>
-                <h2>Logistics & Supply Chain Specialist</h2>
+                <h2>Logistics & Supply Chain Professional</h2>
                 <h1>Optimizing global freight through engineered data.</h1>
                 <p>I am a Mechanical Engineer leveraging data analytics, Six Sigma principles, and TMS platforms to transform U.S. freight operations. Passionate about applying digital supply chain transformation and sustainable trade practices to drive measurable impact for growth-oriented organizations.</p>
                 <a href="mailto:mshahroz620@gmail.com" class="btn">Contact Me</a>
@@ -165,12 +168,12 @@
             </div>
             <div class="role">Logistics & Operations Manager</div>
             <ul>
-                <li><strong>Workflow Monitoring:</strong> Managed daily freight operations, dispatch, and real-time load tracking, consistently achieving 98% on-time deliveries.</li>
-                <li><strong>Efficiency Optimization:</strong> Analyzed shipment data to overhaul operational workflows, contributing to a 30% increase in monthly carrier revenue and 15% efficiency improvements.</li>
-                <li><strong>Resource Management:</strong> Negotiated high-paying contracts with freight brokers, elevating dispatch efficiency by 15% while strategically reducing driver idle time.</li>
-                <li><strong>Process Coordination:</strong> Orchestrated cross-stakeholder communication to resolve 95% of operational disruptions within a 2-hour window.</li>
-                <li><strong>Data-Driven Automation:</strong> Automated key reporting functions and KPI monitoring using advanced Excel, providing actionable insights for continuous operational enhancements.</li>
-                <li><strong>Compliance Leadership:</strong> Streamlined internal documentation to guarantee 100% regulatory compliance and secure audit readiness.</li>
+                <li><strong>Workflow Monitoring:</strong> Managed daily freight operations, dispatch, and real-time load tracking, consistently achieving 98% on-time deliveries.[cite: 2]</li>
+                <li><strong>Efficiency Optimization:</strong> Analyzed shipment data to overhaul operational workflows, contributing to a 30% increase in monthly carrier revenue and 15% efficiency improvements.[cite: 2]</li>
+                <li><strong>Resource Management:</strong> Negotiated high-paying contracts with freight brokers, elevating dispatch efficiency by 15% while strategically reducing driver idle time.[cite: 2]</li>
+                <li><strong>Process Coordination:</strong> Orchestrated cross-stakeholder communication to resolve 95% of operational disruptions within a 2-hour window.[cite: 2]</li>
+                <li><strong>Data-Driven Automation:</strong> Automated key reporting functions and KPI monitoring using advanced Excel, providing actionable insights for continuous operational enhancements.[cite: 2]</li>
+                <li><strong>Compliance Leadership:</strong> Streamlined internal documentation to guarantee 100% regulatory compliance and secure audit readiness.[cite: 2]</li>
             </ul>
         </div>
 
@@ -181,9 +184,9 @@
             </div>
             <div class="role">Career-Prep Fellow & Ambassador</div>
             <ul>
-                <li>Selected from over 4,500 applicants for an intensive, fully-funded 3-month professional development fellowship.</li>
-                <li>Cultivated executive-level business skills including strategic problem-solving, risk management, and cross-cultural communication through 150+ hours of rigorous training.</li>
-                <li>Operated as Fellowship Ambassador, successfully engaging 200+ university students and driving 50+ program enrollments.</li>
+                <li>Selected from over 4,500 applicants for an intensive, fully-funded 3-month professional development fellowship.[cite: 2]</li>
+                <li>Cultivated executive-level business skills including strategic problem-solving, risk management, and cross-cultural communication through 150+ hours of rigorous training.[cite: 2]</li>
+                <li>Operated as Fellowship Ambassador, successfully engaging 200+ university students and driving 50+ program enrollments.[cite: 2]</li>
             </ul>
         </div>
 
@@ -194,8 +197,8 @@
             </div>
             <div class="role">Intern Mechanical Engineer</div>
             <ul>
-                <li>Gained practical, large-scale industrial operations exposure across machine shops, foundries, and power plants.</li>
-                <li>Assisted in the complex overhauling and repair of diesel locomotive engines, building a robust foundation in industrial maintenance workflows.</li>
+                <li>Gained practical, large-scale industrial operations exposure across machine shops, foundries, and power plants.[cite: 2]</li>
+                <li>Assisted in the complex overhauling and repair of diesel locomotive engines, building a robust foundation in industrial maintenance workflows.[cite: 2]</li>
             </ul>
         </div>
     </section>
@@ -212,9 +215,9 @@
                 </div>
                 <div class="role">Research and Development Engineer</div>
                 <ul>
-                    <li>Designed an economical, solar-powered water purification system utilizing HDH-WH technology to minimize carbon impact.</li>
-                    <li>Conducted rigorous parametric analysis (temperature, flow rate) to optimize the Recovery Ratio (RR) to 70–80%.</li>
-                    <li>Spearheaded risk management, cost analysis, and environmental impact assessments to ensure component longevity and scalable efficiency.</li>
+                    <li>Designed an economical, solar-powered water purification system utilizing HDH-WH technology to minimize carbon impact.[cite: 2]</li>
+                    <li>Conducted rigorous parametric analysis (temperature, flow rate) to optimize the Recovery Ratio (RR) to 70–80%.[cite: 2]</li>
+                    <li>Spearheaded risk management, cost analysis, and environmental impact assessments to ensure component longevity and scalable efficiency.[cite: 2]</li>
                 </ul>
             </div>
 
@@ -225,45 +228,66 @@
                 </div>
                 <div class="role">Associate Research Engineer</div>
                 <ul>
-                    <li>Designed and prototyped a mechanical agricultural asset focused on operational efficiency and scalability.</li>
-                    <li>Applied concepts of machinery management directly applicable to automation within agricultural logistics and supply chain optimization.</li>
+                    <li>Designed and prototyped a mechanical agricultural asset focused on operational efficiency and scalability.[cite: 2]</li>
+                    <li>Applied concepts of machinery management directly applicable to automation within agricultural logistics and supply chain optimization.[cite: 2]</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- Credentials Section -->
-    <section id="credentials">
-        <div class="container grid-2">
-            <!-- Skills -->
+    <!-- Credentials Split Grid Section -->
+    <section id="credentials" class="container">
+        <div class="grid-3">
+            
+            <!-- Column 1: Core Competencies -->
             <div class="list-card">
                 <h3>Core Competencies</h3>
                 <div class="skills-container">
-                    <span class="skill-tag">Logistics Management</span>
-                    <span class="skill-tag">Inventory Optimization</span>
-                    <span class="skill-tag">Demand Forecasting</span>
-                    <span class="skill-tag">Risk Mitigation</span>
-                    <span class="skill-tag">Cost Modeling</span>
-                    <span class="skill-tag">KPI Analysis</span>
-                    <span class="skill-tag">Six Sigma Principles</span>
-                    <span class="skill-tag">SAP (WMS)</span>
-                    <span class="skill-tag">TMS (DAT, Truckstop)</span>
-                    <span class="skill-tag">SQL & Data Analysis</span>
-                    <span class="skill-tag">AI/ML Workflows</span>
+                    <span class="skill-tag">Logistics Management</span>[cite: 2]
+                    <span class="skill-tag">Inventory Optimization</span>[cite: 2]
+                    <span class="skill-tag">Demand Forecasting</span>[cite: 2]
+                    <span class="skill-tag">Risk Mitigation</span>[cite: 2]
+                    <span class="skill-tag">Cost Modeling</span>[cite: 2]
+                    <span class="skill-tag">KPI Analysis</span>[cite: 2]
+                    <span class="skill-tag">Six Sigma Principles</span>[cite: 2]
+                    <span class="skill-tag">SAP (WMS)</span>[cite: 2]
+                    <span class="skill-tag">TMS (DAT, Truckstop)</span>[cite: 2]
+                    <span class="skill-tag">SQL & Data Analysis</span>[cite: 2]
+                    <span class="skill-tag">AI/ML Workflows</span>[cite: 2]
                 </div>
             </div>
             
-            <!-- Certifications & Education -->
+            <!-- Column 2: Education -->
             <div class="list-card">
-                <h3>Education & Certifications</h3>
+                <h3>Education</h3>
                 <ul>
-                    <li><strong>B.Sc. Mechanical Engineering</strong> <br>University of Engineering and Technology, Lahore (2019 - 2023)</li>
-                    <li><strong>Google Data Analytics Certificate</strong> <br>Coursera (Data Lifecycle, SQL, Spreadsheets)</li>
-                    <li><strong>Advanced Excel Mastery</strong> <br>Simplilearn (Pivot tables, Macros, Dashboards)</li>
-                    <li><strong>Mastering AI Prompt Engineering</strong> <br>LLM optimization for workflow automation</li>
-                    <li><strong>Health & Safety Compliance</strong> <br>Occupational protocols for industrial environments</li>
+                    <li>
+                        <strong>B.Sc. Mechanical Engineering</strong><br>
+                        UET Lahore (2019 - 2023)[cite: 2]
+                    </li>
+                    <li>
+                        <strong>Higher Education Commission Scholarship</strong><br>
+                        Fully Funded Academic Award (2020 – 2023)[cite: 2]
+                    </li>
+                    <li>
+                        <strong>Merit-Based Laptop Award</strong><br>
+                        Top Academic Distinction Tier[cite: 2]
+                    </li>
                 </ul>
             </div>
+
+            <!-- Column 3: Professional Certifications -->
+            <div class="list-card">
+                <h3>Certifications</h3>
+                <ul>
+                    <li><strong>Google Data Analytics Certificate</strong><br>Coursera (SQL, Data Lifecycle, Spreadsheets)[cite: 2]</li>
+                    <li><strong>Advanced Excel Mastery</strong><br>Simplilearn (Pivot Tables, Dashboards, Macros)[cite: 2]</li>
+                    <li><strong>Mastering AI Prompt Engineering</strong><br>Workflow Automation & LLM Optimization[cite: 2]</li>
+                    <li><strong>Financial Literacy Certification</strong><br>State Bank of Pakistan[cite: 2]</li>
+                    <li><strong>Health & Safety Compliance</strong><br>Occupational Industrial Safety Protocols[cite: 2]</li>
+                </ul>
+            </div>
+
         </div>
     </section>
 
@@ -272,9 +296,9 @@
         <div class="container">
             <h2>Ready to optimize your global operations?</h2>
             <div class="footer-contact">
-                <p>📍 Lahore, Pakistan | 🌍 Open to Global Relocation</p>
-                <p>📞 <a href="tel:+923024071471">+92 302 4071471</a></p>
-                <p>✉️ <a href="mailto:mshahroz620@gmail.com">mshahroz620@gmail.com</a></p>
+                <p>📍 Lahore, Pakistan | 🌍 Open to Global Relocation</p>[cite: 2]
+                <p>📞 <a href="tel:+923024071471">+92 302 4071471</a></p>[cite: 2]
+                <p>✉️ <a href="mailto:mshahroz620@gmail.com">mshahroz620@gmail.com</a></p>[cite: 2]
             </div>
         </div>
     </footer>
