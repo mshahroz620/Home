@@ -76,12 +76,12 @@
         .skill-tag { background: var(--primary-bg); border: 1px solid var(--border); padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: 500; color: var(--navy); }
 
         /* 3-Column Split for Credentials */
-        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
-        .list-card { background: var(--white); padding: 25px; border-radius: 8px; border: 1px solid var(--border); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.04); }
-        .list-card h3 { margin-bottom: 20px; font-size: 1.25rem; border-bottom: 2px solid var(--primary-bg); padding-bottom: 10px; }
-        .list-card ul { list-style-type: none; padding: 0; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; align-items: stretch; }
+        .list-card { background: var(--white); padding: 25px; border-radius: 8px; border: 1px solid var(--border); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.04); display: flex; flex-direction: column; }
+        .list-card h3 { margin-bottom: 20px; font-size: 1.25rem; border-bottom: 2px solid var(--primary-bg); padding-bottom: 10px; flex-shrink: 0; }
+        .list-card ul { list-style-type: none; padding: 0; flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
         .list-card li { padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; line-height: 1.5; }
-        .list-card li:last-child { border-bottom: none; }
+        .list-card li:last-child { border-bottom: none; padding-bottom: 0; }
         .list-card li strong { color: var(--navy); }
 
         /* Footer */
@@ -92,6 +92,7 @@
         /* Mobile Adjustments */
         @media (max-width: 992px) {
             .grid-3 { grid-template-columns: 1fr; gap: 20px; }
+            .list-card ul { gap: 10px; }
         }
         @media (max-width: 768px) {
             .hero .container { flex-direction: column-reverse; text-align: center; gap: 30px; }
@@ -236,58 +237,60 @@
     </section>
 
     <!-- Credentials Split Grid Section -->
-    <section id="credentials" class="container">
-        <div class="grid-3">
-            
-            <!-- Column 1: Core Competencies -->
-            <div class="list-card">
-                <h3>Core Competencies</h3>
-                <div class="skills-container">
-                    <span class="skill-tag">Logistics Management</span>
-                    <span class="skill-tag">Inventory Optimization</span>
-                    <span class="skill-tag">Demand Forecasting</span>
-                    <span class="skill-tag">Risk Mitigation</span>
-                    <span class="skill-tag">Cost Modeling</span>
-                    <span class="skill-tag">KPI Analysis</span>
-                    <span class="skill-tag">Six Sigma Principles</span>
-                    <span class="skill-tag">SAP (WMS)</span>
-                    <span class="skill-tag">TMS (DAT, Truckstop)</span>
-                    <span class="skill-tag">SQL & Data Analysis</span>
-                    <span class="skill-tag">AI/ML Workflows</span>
+    <section id="credentials" style="padding: 50px 0 60px 0;">
+        <div class="container">
+            <div class="grid-3">
+                
+                <!-- Column 1: Core Competencies -->
+                <div class="list-card">
+                    <h3>Core Competencies</h3>
+                    <div class="skills-container">
+                        <span class="skill-tag">Logistics Management</span>
+                        <span class="skill-tag">Inventory Optimization</span>
+                        <span class="skill-tag">Demand Forecasting</span>
+                        <span class="skill-tag">Risk Mitigation</span>
+                        <span class="skill-tag">Cost Modeling</span>
+                        <span class="skill-tag">KPI Analysis</span>
+                        <span class="skill-tag">Six Sigma Principles</span>
+                        <span class="skill-tag">SAP (WMS)</span>
+                        <span class="skill-tag">TMS (DAT, Truckstop)</span>
+                        <span class="skill-tag">SQL & Data Analysis</span>
+                        <span class="skill-tag">AI/ML Workflows</span>
+                    </div>
                 </div>
-            </div>
-            
-            <!-- Column 2: Education -->
-            <div class="list-card">
-                <h3>Education</h3>
-                <ul>
-                    <li>
-                        <strong>B.Sc. Mechanical Engineering</strong><br>
-                        UET Lahore (2019 - 2023)
-                    </li>
-                    <li>
-                        <strong>Higher Education Commission Scholarship</strong><br>
-                        Fully Funded Academic Award (2020 – 2023)
-                    </li>
-                    <li>
-                        <strong>Merit-Based Laptop Award</strong><br>
-                        Top Academic Distinction Tier
-                    </li>
-                </ul>
-            </div>
+                
+                <!-- Column 2: Education -->
+                <div class="list-card">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>
+                            <strong>B.Sc. Mechanical Engineering</strong><br>
+                            UET Lahore (2019 - 2023)
+                        </li>
+                        <li>
+                            <strong>Higher Education Commission Scholarship</strong><br>
+                            Fully Funded Academic Award (2020 – 2023)
+                        </li>
+                        <li>
+                            <strong>Merit-Based Laptop Award</strong><br>
+                            Top Academic Distinction Tier
+                        </li>
+                    </ul>
+                </div>
 
-            <!-- Column 3: Professional Certifications -->
-            <div class="list-card">
-                <h3>Certifications</h3>
-                <ul>
-                    <li><strong>Google Data Analytics Certificate</strong><br>Coursera (SQL, Data Lifecycle, Spreadsheets)</li>
-                    <li><strong>Advanced Excel Mastery</strong><br>Simplilearn (Pivot Tables, Dashboards, Macros)</li>
-                    <li><strong>Mastering AI Prompt Engineering</strong><br>Workflow Automation & LLM Optimization</li>
-                    <li><strong>Financial Literacy Certification</strong><br>State Bank of Pakistan</li>
-                    <li><strong>Health & Safety Compliance</strong><br>Occupational Industrial Safety Protocols</li>
-                </ul>
-            </div>
+                <!-- Column 3: Professional Certifications -->
+                <div class="list-card">
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li><strong>Google Data Analytics Certificate</strong><br>Coursera (SQL, Data Lifecycle, Spreadsheets)</li>
+                        <li><strong>Advanced Excel Mastery</strong><br>Simplilearn (Pivot Tables, Dashboards, Macros)</li>
+                        <li><strong>Mastering AI Prompt Engineering</strong><br>Workflow Automation & LLM Optimization</li>
+                        <li><strong>Financial Literacy Certification</strong><br>State Bank of Pakistan</li>
+                        <li><strong>Health & Safety Compliance</strong><br>Occupational Industrial Safety Protocols</li>
+                    </ul>
+                </div>
 
+            </div>
         </div>
     </section>
 
